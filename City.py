@@ -2,16 +2,6 @@ import random
 import math
 
 
-# class City:
-#     def __init__(self, x, y, city_id):
-#         self.x = x
-#         self.y = y
-#         self.city_id = city_id
-#
-#     def __str__(self):
-#         return f"city:{self.city_id} is at {self.x:.1f} : {self.y:.1f}"
-
-
 def generate_cities(num_cities, space_width, space_height):
     cities = {}
     city_id = 0
@@ -37,3 +27,4 @@ def all_distances(cities_dict):
             current_city_distances.append(calculate_distance(city, dist_to_city, cities_dict))
         distances.append(current_city_distances)
     return distances
+
